@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
     height: 60px;
@@ -54,6 +55,12 @@ const MenuItem = styled.div`
 `
 
 const Navbar = () => {
+
+    let linkStyle = {
+        textDecoration: "none",
+        color: "black"
+    };
+
   return (
     <Container>
         <Wrapper>
@@ -64,10 +71,10 @@ const Navbar = () => {
                     <SearchIcon style={{color: 'gray', fontSize: '16px'}} />
                 </SearchContainer>
             </Left>
-            <Center><Logo>HAROON.</Logo></Center>
+            <Center><NavLink to="/" style={linkStyle}><Logo>HAROON.</Logo></NavLink></Center>
             <Right>
-                <MenuItem>REGISTER</MenuItem>
-                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem><NavLink to="/register" style={linkStyle}>REGISTER</NavLink></MenuItem>
+                <MenuItem><NavLink to="/login" style={linkStyle}>SIGN IN</NavLink></MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="primary">
                         <ShoppingCartOutlinedIcon />

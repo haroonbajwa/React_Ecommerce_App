@@ -1,12 +1,9 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
-import Announcement from '../components/Announcement'
-import Navbar from '../components/Navbar'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
-
-import denimjumpsuit from '../images/denimjumpsuit.jpg'
-import { color } from '@mui/system'
+import { popularProducts } from '../data'
 import { Add, Remove } from '@mui/icons-material'
 
 const Container = styled.div`
@@ -21,7 +18,7 @@ const ImgContainer = styled.div`
 const Image = styled.img`
     width: 100%;
     height: 90vh;
-    object-fit: cover;
+    object-fit: contain;
 `
 const InfoContainer = styled.div`
     flex: 1;
@@ -104,18 +101,21 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+
+    const {id} = useParams();
+
+    const product = popularProducts.find((prod) => prod.id === Number(id));
+
   return (
     <Container>
-        <Announcement />
-        <Navbar />
         <Wrapper>
             <ImgContainer>
-                <Image src={denimjumpsuit} />
+                <Image src={product.img} />
             </ImgContainer>
             <InfoContainer>
-                <Title>Denim Jumpsuit</Title>
+                <Title>{product.title}</Title>
                 <Price>$20.99</Price>
-                <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dicta autem, expedita eveniet officia cumque aspernatur iste unde veritatis natus doloribus a modi possimus dolor odit laboriosam similique ut totam.</Description>
+                <Description>{product.description}</Description>
                 <FilterContainer>
                     <Filter>
                         <FilterTitle>Color</FilterTitle>

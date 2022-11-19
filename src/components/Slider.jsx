@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { sliderItems } from '../data';
+import { NavLink } from 'react-router-dom';
 
 const Container = styled.div`
     width: 100%;
@@ -94,6 +95,11 @@ const Slider = () => {
     }
   }
 
+  let buttonLink = {
+    color: "black",
+    textDecoration: "none",
+  }
+
   return (
     <Container>
         <Arrow direction="left" onClick={() => handleClick("left")}>
@@ -108,7 +114,7 @@ const Slider = () => {
               <InfoContainer>
                 <Title>{item.title}</Title>
                 <Description>{item.desc}</Description>
-                <Button>SHOP NOW</Button>
+                <Button><NavLink style={buttonLink} to='/products'>SHOP NOW</NavLink></Button>
               </InfoContainer>
             </Slide>
           ))}

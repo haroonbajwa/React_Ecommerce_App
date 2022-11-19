@@ -54,35 +54,51 @@ export const sliderItems = [
 
   export const popularProducts = [
     {
-      id:1,
+      id: 1,
+      title: 'White T-shirt with logo',
       img: `${product1}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:2,
+      id: 2,
+      title: 'Printed T-shirt',
       img: `${product2}`,
+      description: 'Nulla commodo lacinia arcu. Phasellus quis purus massa. Integer ornare eleifend magna, laoreet imperdiet turpis vulputate viverra. In scelerisque luctus accumsan. Quisque in mauris sit amet magna tincidunt dignissim vel sed justo. Nullam ut sem quis eros congue pulvinar eget vitae velit.',
     },
     {
-      id:3,
+      id: 3,
+      title: 'Black Plain T-shirt',
       img: `${product3}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:4,
+      id: 4,
+      title: 'Cap with dog logo',
       img: `${product4}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:5,
+      id: 5,
+      title: 'White women long coat',
       img: `${product5}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:6,
+      id: 6,
+      title: 'Women coat',
       img: `${product6}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:7,
+      id: 7,
+      title: 'Printed frock',
       img: `${product7}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
     {
-      id:8,
+      id: 8,
+      title: 'Shopping bag',
       img: `${product8}`,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac odio quis ipsum eleifend molestie a at est. Pellentesque molestie justo nec purus interdum, maximus volutpat velit venenatis. Proin euismod sollicitudin lectus, nec maximus mauris mollis eget. Cras vitae metus vitae ipsum laoreet facilisis sed quis quam.',
     },
   ]
